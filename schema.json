@@ -1,0 +1,41 @@
+{% schema %}
+{
+  "name": "Custom Collage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_collage_title",
+      "label": "Custom Collage Title"
+    }
+  ],
+  "max_blocks": 11,
+  "blocks": [
+    {
+      "name": "Collage Image",
+      "type": "collage_image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Collage Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "collage_image",
+          "label": "Collage Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "flip_image",
+          "label": "Flip Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Collage"
+    }
+  ]
+}
+{% endschema %}
